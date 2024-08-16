@@ -1,0 +1,281 @@
+@import "reset.css";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+:root {
+    /* Ширина контейнера */
+    --container-width: 1210px;
+    /* Отступ контейнера */
+    --container-padding: 15px;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #ffffff;
+    color: #2E363E;
+    height: 9219px;
+}
+
+.none {display: none !important;}
+
+.container {
+    /* Используем ширину определунную переменной */
+    max-width: var(--container-width);
+    padding: 0 var(--container-padding);
+    /* Выравниваем по центру */
+    margin: 0 auto;
+    position: relative;
+}
+
+.container-full {
+    /*padding-left: 200px;*/
+    /*padding-right: 200px;*/
+
+}
+
+.block {
+    height: 82px;
+    background-color: #2fff97;
+}
+
+
+/* Header */
+
+.header {
+    color: #ffffff;
+    min-height: 1294px;
+    background-image: url("../img/bg (1).jpg");
+    background-repeat: no-repeat;
+    background-size: 1920px;
+    background-position: top center;
+}
+
+.header__top {
+    position: relative;
+    padding-top: 37px;
+    margin-bottom: 188px;
+}
+
+
+.header__content {
+    position: relative;
+    max-width: 647px;
+}
+
+
+.nav {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+}
+
+.nav__logo {
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.nav__address {
+    font-size: 12px;
+    font-weight: 400;
+    justify-self: end;
+    text-align: start;
+    padding-right: 5px;
+    position: relative;
+}
+
+.nav__info {
+    position: relative;
+    font-size: 21px;
+    font-weight: 700;
+    justify-self: end;
+    text-align: end;
+}
+
+.nav-phone {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: -30px;
+
+    /*left: -24px;*/
+}
+
+.time__working {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.nav-geo{
+    position: absolute;
+    left: -30px;
+    top: 0;
+}
+
+.horizontal-line {
+    position: absolute;
+    bottom: -37px;
+    left: -350px;
+    width: 1920px;
+
+}
+
+/* Header content */
+
+.header__badge {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: #F2F6FA;
+    color: #2E363E;
+    font-size: 11px;
+    font-weight: 400;
+    border-radius: 5px  ;
+    margin-bottom: 24px;
+}
+
+.header__title {
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.header__text {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    max-width: 450px;
+}
+
+.header__btn {
+    display: inline-block;
+    padding: 30px 50px;
+    border-radius: 8px;
+    background-color: #FED84C;
+    color: #2E363E;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 20px;
+}
+
+.header__s-text {
+    position: absolute;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: start;
+    bottom: 25px;
+    max-width: 150px;
+}
+
+/* Main */
+
+.main__badge {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 80px;
+}
+
+.card-container  {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card__img {
+    width: 380px;
+    height: 245px;
+    margin-bottom: 50px;
+    max-width: none;
+}
+
+.card__badge {
+    font-size: 24px;
+    font-weight: 700; /* bold */
+    margin-bottom: 12px;
+}
+
+.card__text {
+    font-size: 16px;
+    font-weight: 400; /* regular */
+    max-width: 240px;
+    margin-bottom: 24px;
+}
+
+.card__price {
+    font-size: 24px;
+    font-weight: 500; /* medium */
+    margin-bottom: 14px;
+}
+
+.card__btn {
+    font-size: 18px;
+    font-weight: 500;
+    display: inline-block; /* для применения паддингов */
+    padding: 20px 40px;
+    border-radius: 8px;
+    background-color: #FED84C;
+    color: #2E363E;
+    margin-bottom: 50px;
+}
+
+
+/* Customer-container */
+
+.customer-container {
+    position: relative;
+    height: 1352px;
+    max-width: 1920px;
+    background-color: #081130;
+}
+
+.customer-img {
+    height: 330px;
+}
+
+.customer__content {
+    position: absolute;
+    max-width: 492px;
+    right: 369px;
+    top: 400px;
+
+}
+
+.customer__badge {
+    display: inline-block;
+    background-color: #F2F6FA;
+    font-size: 11px;
+    font-weight: 400;
+    padding: 10px 18px;
+    margin-bottom: 24px;
+    border-radius: 5px;
+}
+
+.customer__title {
+    font-size: 48px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 24px;
+}
+
+.customer__text {
+    font-size: 21px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.customer__btn {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 30px 50px;
+    background: #FED84C;
+    border-radius: 8px;
+    color: #2E363E;
+    /*margin-top: 40px;*/
+}
+
+.customer-img-down {
+    position: absolute;
+    bottom: 0;
+}
